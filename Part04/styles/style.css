@@ -1,0 +1,263 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.todo{
+    position: absolute;
+    display: flex;
+    background-color: rgb(15,22,65);
+    height: 95%;
+    width: 93%;
+    border-radius: 15px;
+    justify-content: center;
+    color: white;
+    top: 2%;
+}
+
+.tasks{
+    position: relative;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 20%;
+    height: 60%;
+    width: 40%;
+    overflow-x: auto;
+    border-radius: 15px;
+}
+
+.tasks #task-box{
+    position: relative;
+    color: black;
+    background-color: rgb(175,145,235);
+    height: 13%;
+    width: 65%;
+    margin: auto;
+    margin-top: 10px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.icons{
+    display: flex;
+    position: absolute; 
+    background-color: rgba(15,22,65, 0.6);
+    border-radius: 3px;
+    width: 20%;
+    height: 30%;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.icons button {
+    position: relative;
+    margin: auto;
+    width: 40%;
+    height: 85%;
+    font-size: 80%;
+    margin-top: 1.5px;
+    border: none;
+    border-radius: 3px;
+    
+}
+
+.icons button:hover {
+    background: #bfbebe;
+}
+
+.icons button:active {
+    background: #767575;
+    box-shadow: inset;
+    outline: none;
+}
+
+
+.icons ion-icon{
+    left: 20px;
+    top: 20%;
+}
+
+.todo #create-btn{
+    /*background-color: rgb(27, 33, 78);*/
+    background-color: transparent;
+    height: 5%;
+    width: 15%;
+    position: absolute;
+    top: 85%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.todo #create-btn:hover{
+    background-color: rgb(175,145,235);
+    color: rgb(15,22,65);
+}
+
+.todo #create-btn:active {
+    background: rgb(126, 104, 172);
+    box-shadow: inset;
+    outline: none;
+}
+
+
+.todo #taskName {
+    background: transparent;
+    border: none;
+    font-size: 15px;
+}
+
+.create{
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 80%;
+    width: 60%;
+    border-radius: 15px;
+    top: 10%;
+
+}
+
+.create h1{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    right: 30%;
+}
+
+
+.create .nav{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 15%;
+    border-radius: 5px;
+}
+
+.create #close-btn{
+    position: relative;
+    margin-left: 10px;
+    top: 20px;
+    width: 80%;
+    height: 5%;
+}
+
+.create #add-task{
+    position: relative;
+    margin-left: 10px;
+    top: 30px;
+    width: 80%;
+    height: 5%;
+}
+
+.create #todo-text{
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    width: 70%;
+    height: 7%;
+    font-size: 15px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(53, 14, 88, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.create #preview {
+    position: absolute;
+    background-color: rgb(175,145,235);
+    right: 30%;
+    height: 15%;
+    width: 40%;
+    top: 20%;
+    right: 22%;
+    text-align: center;
+    border-radius: 5px;
+}
+.create #preview p{
+    padding-top: 3%;
+}
+
+.create #prev-icons {
+    display: flex;
+    position: absolute; 
+    background-color: rgba(15,22,65, 0.6);
+    border-radius: 3px;
+    width: 20%;
+    height: 30%;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    justify-content: center;
+    
+}
+
+.create ion-icon{
+    left: 20px;
+    top: 20%;
+}
+
+
+
+#done {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: green;
+    right: 35px;
+    top: 20px;
+    height: 20px;
+    width: 25px;
+}
+
+#cancel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: red;
+    right: 5px;
+    top: 20px;
+    height: 20px;
+    width: 25px;
+}
+
+
+.create #prev-icons button{
+    position: relative;
+    margin: auto;
+    width: 40%;
+    height: 85%;
+    font-size: 80%;
+    margin-top: 1.5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.create.fadeIn{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.create.fadeOut{
+    opacity: 0;
+    transition: opacity 1s;
+}
+

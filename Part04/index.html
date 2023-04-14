@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Todo List</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <body>
+        <div id="lol"></div>
+        <div id="todo" class="todo">
+            <h1 style="position: absolute">Todo List</h1>
+            <div id="tasks" class="tasks">
+
+            </div>
+            <button id="create-btn">Create A Task</button>
+        </div>
+        <div id="create" class="create">
+            <div class="main">
+                <h1>Task Preview</h1>
+                <div id="preview" class="preview">
+                    <p id="prev-text"></p>
+                    <div id="prev-icons" class="prev-icons">
+                        <button><ion-icon name="trash"></ion-icon></button>
+                        <button><ion-icon name="pencil"></ion-icon></button>
+                    </div>
+                </div>
+                <input id="todo-text" onkeyup="textBoxChange()" type="text" required placeholder="Enter task here"></input>
+            </div>
+            <div class="nav">
+                <button id="close-btn">Close</button>
+                <button id="add-task">Add</button>
+                <div class="properties">
+
+                </div>
+            </div>
+        </div>
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</html>
